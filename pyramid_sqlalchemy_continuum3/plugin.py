@@ -16,7 +16,6 @@ current_user object.
 """
 
 import pyramid
-from pyramid.security import authenticated_userid
 from pyramid.threadlocal import get_current_request
 from sqlalchemy_utils import ImproperlyConfigured
 from sqlalchemy_continuum.plugins import Plugin
@@ -28,7 +27,7 @@ def fetch_current_user_id():
     # Return None if we are outside of request context.
     if request is None:
         return
-    return authenticated_userid(request)
+    return request.authenticated_userid
 
 
 def fetch_remote_addr():
