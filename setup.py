@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="eastridge_labs",  # Replace with your own username
-    version="temp",
+    name="pyramid_sqlalchemy_continuum",  # Replace with your own username
+    version="ewt",
     author="Lehan Coetzee (Jordi Fernández <jfernandez@bioiberica.com>)",
     author_email="haaslewer2@gmail.com",
     description="PyramidPlugin offers way of integrating Pyramid framework with SQLAlchemy-Continuum.",
